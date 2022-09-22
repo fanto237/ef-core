@@ -10,7 +10,7 @@ public class Order
 	public DateTime OrderPlaced { get; set; }
 	public DateTime OrderFulfilled { get; set; }
 	public int CustomerId { get; set; }
-	public Custom Customer { get; set; } = null!;
+	public Customer Customer { get; set; } = null!;
 	public ICollection<OrderDetail> OrderDetails { get; set; } = null!;
 
 }

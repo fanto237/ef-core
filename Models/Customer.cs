@@ -1,6 +1,6 @@
 ﻿namespace ef_core.Models;
 
-public class Custom
+public class Customer
 {
 	public int Id { get; set; }
 	public string FirstName { get; set; } = null!;
