@@ -12,8 +12,8 @@ using ef_core.Data;
 namespace ef_core.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220922102204_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20220922202135_CreatingMigration")]
+    partial class CreatingMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -114,7 +114,7 @@ namespace ef_core.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("(decimal(6, 2)");
+                        .HasColumnType("decimal(6,2)");
 
                     b.HasKey("Id");
 

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ef_core.Migrations
 {
-    public partial class FirstMigration : Migration
+    public partial class CreatingMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -32,7 +32,7 @@ namespace ef_core.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<decimal>(type: "(decimal(6, 2)", nullable: false)
+                    Price = table.Column<decimal>(type: "decimal(6,2)", nullable: false)
                 },
                 constraints: table =>
                 {

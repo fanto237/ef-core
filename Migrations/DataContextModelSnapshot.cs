@@ -111,6 +111,9 @@ namespace ef_core.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(6,2)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Products");
